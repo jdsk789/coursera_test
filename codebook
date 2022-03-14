@@ -17,6 +17,16 @@ df_msd is spinned off from df_data, where it was combined with df_data and df_ac
 data is same data frame as df_msd, changed the name just for readability
 tidydata is spinned off from data, where it was grouped by the activity column and summarized by mean
 
+The steps were as follows:
+1. Need to import libraries of plyr and dplyr
+2. Need to import all necessary text files
+3. Combine the training and test data
+4. Change the name of the columns of the above data to appropriate variables given in features.txt
+5. Create another data frame from y_test and y_train and combine them
+6. using regular expression, extract the columns that contains mean() or std()
+7. change the last column of activities to appropriate element given in activities.txt
+8. create a tidy data by grouping the data by the activities and summarize all with mean
+
 The variables are as follows
 1 tBodyAcc-mean()-X
 2 tBodyAcc-mean()-Y
